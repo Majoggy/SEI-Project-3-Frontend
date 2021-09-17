@@ -34,7 +34,7 @@ function NavigationBar({ loggedIn, user }) {
                 <Navbar.Text className="text-info no-button username">Welcome, {user.username}!</Navbar.Text>
                 <Navbar.Text className="no-button" href="">Favourites{!user.favouritedStudio.length >= 1 ? '' : <Badge pill className="counter" bg="info">{user.favouritedStudio.length}</Badge>}</Navbar.Text>
                 <Nav.Link href="/profile" className="no-button">Profile</Nav.Link>
-                <Nav.Link href="/dgsf" onClick={handleLogout}>Log Out</Nav.Link>
+                <Nav.Link href="/" onClick={handleLogout}>Log Out</Nav.Link>
                 {/* <Nav.Link href="/"><Button variant="secondary" onClick={handleLogout}>Log Out</Button></Nav.Link> */}
               </>
             )}
